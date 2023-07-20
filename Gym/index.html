@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MY Project</title>
+  <script src="index.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="style.css">
+
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">
+      <img src="images/icons8-gym-64.png" alt="Logo">
+    </a>
+    <ul class="navbar-buttons">
+
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#free-trial">Join Us</a></li>
+      <li><a href="#BMI">Address and BMI</a></li>
+    </ul>
+  </nav>
+</head>
+
+<body>
+  <section class="background-section">
+    <h1>WELCOME TO THE GYM</h1>
+    <h3>Transform Your Body, Transform Your Life..</h3>
+  </section>
+
+
+  <section id="about">
+    <div class="heading">
+      <h2>ABOUT</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/zumba.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ZUMBA</h5>
+              <p class="card-text">A high-energy dance fitness program that combines Latin rhythms with aerobic
+                exercises, making workouts
+                fun and engaging.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/kick.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">KICK BOXING</h5>
+              <p class="card-text">Unleash your inner strength and unleash your potential with kickboxing, a dynamic
+                martial arts-inspired
+                workout that combines punches, kicks, and cardio exercises for an empowering and exhilarating fitness
+                experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/strength.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">STRENGTH</h5>
+              <p class="card-text">Achieve your strength goals with our comprehensive gym program designed to enhance
+                muscle development,
+                increase endurance, and optimize overall strength for a well-rounded fitness journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="join">
+    <div class="why">
+      <h2><u>WHY THE GYM</u></h2>
+    </div>
+
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Support</h3>
+        <p>Our gym is dedicated to providing unwavering support to our members on their fitness journey. We offer
+          personalized training sessions with certified trainers who tailor workout plans to individual goals, ensuring
+          proper form and technique while offering motivation and accountability. Our group fitness classes, led by
+          experienced instructors, foster a supportive environment where members can push their limits and enjoy the
+          camaraderie of like-minded individuals. We provide fitness assessments to track progress and set achievable
+          goals, along with nutrition guidance to complement workouts. </p>
+      </div>
+      <div class="grid-item">
+        <h3>Tools & Training</h3>
+        <p>Our gym offers state-of-the-art tools and personalized training programs to support members in their fitness
+          journey. Our certified trainers provide guidance, motivation, and expertise, while our diverse range of
+          equipment ensures a well-rounded workout experience. Join us and achieve your fitness goals with our
+          comprehensive support..</p>
+      </div>
+      <div class="grid-item">
+        <h3> Community</h3>
+        <p>At our gym, we foster a strong sense of community among our members. We believe that a supportive and
+          motivating environment is crucial for success. We organize social events, group challenges, and workshops to
+          encourage interaction and connection. Our members form friendships, inspire each other, and celebrate
+          achievements together. Join our inclusive community and experience the power of support and camaraderie on
+          your fitness journey.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Convenience </h3>
+        <p>Convenience is a top priority at our gym. We understand that busy schedules can make it challenging to
+          prioritize fitness. That's why we offer flexible membership options, extended hours, and convenient locations.
+          Our facilities are equipped with modern amenities and spacious workout areas. We strive to make fitness
+          accessible and hassle-free, ensuring that you can conveniently integrate your workouts into your daily
+          routine..</p>
+      </div>
+    </div>
+    <br>
+
+    <section id="free-trial">
+
+      <div class="form">
+        <form action="https://formspree.io/f/xqkvapkq" method="POST" <label>
+          <h2>3 DAYS FREE TRAIL</h2></label>
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label><br>
+            Your Name:
+            <input type="Name" name="Name">
+          </label>
+          <label>
+            <br>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+          <br>
+          <div class="button">
+            <button type="submit" class="btn btn-primary">Join Today</button>
+          </div>
+          <br>
+
+        </form>
+      </div>
+    </section>
+
+    <section id="BMI">
+      <div class="container">
+        <div class="mass">
+          <h3><i>let's Check your BMI</i></h3><br>
+          <label for="height">Height (in meters):</label>
+          <input type="text" id="height">
+          <br><br>
+          <label for="weight">Weight (in kilograms):</label>
+          <input type="text" id="weight">
+          <br><br>
+          <button onclick="calculateBMI()" class="btn btn-primary">Calculate</button>
+          <p id="result"></p>
+        </div>
+
+        <div class="address">
+          <h3>Address</h3>
+           <h5>SCO 13, Kuk Complex<br>
+            Opposite 3rd Gate<br>
+            Kurukshetra University, Kurukshetra (136119)<br>
+            Ph.no.: 9896683454<br>
+            Email: arunkhatk3454@gmail.com</h5
+        </div>
+      </div>
+
+    </section>
+
+    <br>
+    <div class="footer">
+      <footer>
+        <div class="social-links">
+          <a href="https://instagram.com/ak_khatak___?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img
+              src="images/instagram icon.jpeg" alt="Instagram" /></a>
+          <a href="https://whatsapp.com/dl/" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+          <a href="https://www.linkedin.com/in/arun-kumar-874701220" target="_blank"><img src="images/linkedin.png"
+              alt="LinkedIn" /></a>
+        </div>
+        <div class="p">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+
+      </footer>
+    </div>
+
+</body>
+
+</html>
